@@ -6,7 +6,7 @@ node {
     stage("build"){
         withMaven(maven: "maven"){
 
-            echo "Print variables values $(testVariable)"
+            echo "Print variables values ${testVariable}"
 
             sh "mvn clean install"
         }
