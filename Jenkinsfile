@@ -3,7 +3,7 @@ def pom = ""
 
 node {
 
-    stage("Get pom){
+    stage("Get pom"){
 
         pom = readMavenPom file: 'pom.xml'
         echo "Artifact ID: " + pom.artifactId
